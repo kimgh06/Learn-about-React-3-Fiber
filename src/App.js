@@ -6,10 +6,10 @@ import Exe from "./3dsrc/exe";
 function App() {
   return (
     <div className="App">
-      <Canvas>
-        <OrbitControls autoRotate={false} />
+      <Canvas camera={{ position: [0, 10, 0] }}>
+        {/* <OrbitControls /> */}
         <Exe />
-        <color attach={'background'} args={['#cdcdcd']} />
+        <color attach={'background'} args={['#121212']} />
       </Canvas>
     </div>
   );
